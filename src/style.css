@@ -35,4 +35,5 @@
 .elementa.slide-in {
   transform: translatey(0); /* Slide in to the original position */
   opacity: 1; /* Fade in */
+  
 }
