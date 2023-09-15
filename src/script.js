@@ -24,6 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
     checkScroll();
 });
 
+
+
 // Select all elements with the 'element' class
 const elements = document.querySelectorAll('.elementa');
 
@@ -42,6 +44,3 @@ const observer = new IntersectionObserver((entries, observer) => {
 elements.forEach((element) => {
   observer.observe(element);
 });
-
-
-console.log(elements);

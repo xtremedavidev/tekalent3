@@ -4,7 +4,6 @@
 
 .fasthand{
     font-family: "Fasthand", serif;
-    
 }
 
 .sec2{
@@ -27,20 +26,13 @@
   
 }
 
-/* Initially hide the elements outside the viewport */
 .elementa {
-  transform: translateX(-100%); /* Start position off-screen to the left */
-  transition: transform 0.5s; /* Adjust the duration as needed */
+  transform: translatey(100%); /* Start position off-screen to the left */
+  opacity: 0; /* Initially hidden */
+  transition: transform 0.5s, opacity 1.5s; /* Adjust the duration as needed */
 }
 
-/* When elements become visible, slide them in */
 .elementa.slide-in {
-  transform: translateX(0); /* Slide in to the original position */
-}
-
-
-.si{
-  transform: rotateZ(30deg); /* Adjust the tilt angle as desired */
-  transition: transform 0.9s ease;
-
+  transform: translatey(0); /* Slide in to the original position */
+  opacity: 1; /* Fade in */
 }
