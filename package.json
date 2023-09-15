@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "D": "^1.0.0",
+    "node": "^20.6.0",
+    "tailwind": "^4.0.0"
+  }
+}

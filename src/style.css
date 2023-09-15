@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fasthand{
+    font-family: "Fasthand", serif;
+    
+}
+
+.sec2{
+    background-color: #E1EAF4;
+    
+
+}
+
+
+.overhide::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+
+.bg-gif-background {
+  background-image: url('./../Assets/hero.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+/* Initially hide the elements outside the viewport */
+.elementa {
+  transform: translateX(-100%); /* Start position off-screen to the left */
+  transition: transform 0.5s; /* Adjust the duration as needed */
+}
+
+/* When elements become visible, slide them in */
+.elementa.slide-in {
+  transform: translateX(0); /* Slide in to the original position */
+}
+
+
+.si{
+  transform: rotateZ(30deg); /* Adjust the tilt angle as desired */
+  transition: transform 0.9s ease;
+
+}
