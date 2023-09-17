@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const isAtBottom = flexCol.scrollHeight - flexCol.clientHeight <= flexCol.scrollTop;
 
         if (!isStatic && isAtBottom) {
-            scrollingSection.style.position = "static";
+            scrollingSection.style.position = "sticky";
             isStatic = true;
         } else if (isStatic && !isAtBottom) {
             scrollingSection.style.position = "relative";
@@ -23,6 +23,25 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initial check
     checkScroll();
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -44,3 +63,6 @@ const observer = new IntersectionObserver((entries, observer) => {
 elements.forEach((element) => {
   observer.observe(element);
 });
+
+
+//npx tailwindcss -i ./src/style.css -o ./dist/output.css --watch
